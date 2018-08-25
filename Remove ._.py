@@ -1,12 +1,6 @@
 import os
 import sys
 
-#checks for python 3
-if(sys.version_info<(3,0,0)):
-	print('You are not using Python 3, please use Python 3 to run this script')
-	input('Press Enter to close')
-	quit()
-
 scannedFiles = []
 dotunderscore = []
 
