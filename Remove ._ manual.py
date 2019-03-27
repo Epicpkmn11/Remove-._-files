@@ -8,6 +8,8 @@ os.system("clear")
 folder = input("Drag/Drop the folder to clean\n> ")
 if folder[-1:] == " ":
 	folder = folder[:-1]
+while folder.find('\\') != -1:
+	folder = folder[:folder.find('\\')] + folder[folder.find('\\')+1:]
 os.chdir(folder)
 
 if __name__ == "__main__":
